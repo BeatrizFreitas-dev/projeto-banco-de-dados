@@ -1,0 +1,58 @@
+# Projeto Clientes
+
+📌 Sobre o Projeto:  banco de dados para cadastro de clientes.
+
+🗂 Estrutura do Projeto
+
+📁 Tabela: Clientes
+
+Armazena informações básicas dos clientes.
+
+CREATE TABLE Clientes (
+    id_cliente INT PRIMARY KEY,
+    nome VARCHAR(100),
+    telefone VARCHAR(20)
+);
+
+📁 Inserção de dados
+INSERT INTO Clientes (id_cliente, nome, telefone)
+VALUES (1, 'Ana Oliveira', '(11) 91234-5678');
+
+INSERT INTO Clientes (id_cliente, nome, telefone)
+VALUES (2, 'Pedro Santos', '(21) 98888-1122');
+
+📁 Consulta
+SELECT * FROM Clientes;
+
+📁 Tabela: Contatos
+CREATE TABLE Contatos (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    telefone VARCHAR(20)
+);
+📁 Inserção de dados
+INSERT INTO Contatos (nome, telefone)
+VALUES
+    ('Jose', '(11)98765-4321'),
+    ('Joao', '(21)92587-6321'),
+    ('Antonio', '(11)93654-7854'),
+    ('Maria', '(11)96547-8523');
+📁 Consulta
+SELECT * FROM Contatos;
+
+🏪 Desafio Proposto
+
+Simulação de um sistema de papelaria com as seguintes entidades:
+
+Produtos
+Vendas
+Fornecedores
+
+O objetivo é aplicar os conhecimentos adquiridos para:
+Criar tabelas
+Inserir registros
+Realizar consultas.
+
+👩‍💻 Autora:
+Ana Beatriz Freitas Nascimento
+
